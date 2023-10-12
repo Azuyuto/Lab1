@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AC712A7E2ACFF6240087723F /* Lab1App.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC712A7D2ACFF6240087723F /* Lab1App.swift */; };
-		AC712A802ACFF6240087723F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC712A7F2ACFF6240087723F /* ContentView.swift */; };
+		AC712A802ACFF6240087723F /* BuidlingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC712A7F2ACFF6240087723F /* BuidlingView.swift */; };
 		AC712A822ACFF6250087723F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC712A812ACFF6250087723F /* Assets.xcassets */; };
 		AC712A852ACFF6250087723F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC712A842ACFF6250087723F /* Preview Assets.xcassets */; };
 		AC712A8F2ACFF6250087723F /* Lab1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC712A8E2ACFF6250087723F /* Lab1Tests.swift */; };
@@ -36,7 +36,7 @@
 /* Begin PBXFileReference section */
 		AC712A7A2ACFF6240087723F /* Lab1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lab1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC712A7D2ACFF6240087723F /* Lab1App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lab1App.swift; sourceTree = "<group>"; };
-		AC712A7F2ACFF6240087723F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AC712A7F2ACFF6240087723F /* BuidlingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuidlingView.swift; sourceTree = "<group>"; };
 		AC712A812ACFF6250087723F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC712A842ACFF6250087723F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AC712A8A2ACFF6250087723F /* Lab1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Lab1Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,7 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				AC712A7D2ACFF6240087723F /* Lab1App.swift */,
-				AC712A7F2ACFF6240087723F /* ContentView.swift */,
+				AC712A7F2ACFF6240087723F /* BuidlingView.swift */,
 				AC712A812ACFF6250087723F /* Assets.xcassets */,
 				AC712A832ACFF6250087723F /* Preview Content */,
 			);
@@ -257,7 +257,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC712A802ACFF6240087723F /* ContentView.swift in Sources */,
+				AC712A802ACFF6240087723F /* BuidlingView.swift in Sources */,
 				AC712A7E2ACFF6240087723F /* Lab1App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,8 +1,20 @@
-//
-//  ListView.swift
-//  Lab1
-//
-//  Created by Guest User on 13/10/2023.
-//
+import SwiftUI
 
-import Foundation
+
+struct ScrumsView: View {
+    let buildings: [BuildingModel]
+    
+    var body: some View {
+        List(buildings, id: \.name) { building in
+            CardView(building: building)
+                .listRowBackground(building.theme.mainColor)
+        }
+    }
+}
+
+
+struct ScrumsView_Previews: PreviewProvider {
+    static var previews: some View {
+        ScrumsView(buildings: BuildingModel.sampleData)
+    }
+}

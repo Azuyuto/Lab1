@@ -3,13 +3,13 @@ import SwiftUI
 
 enum Theme: String {
     case lavender
-    case purple
+    case blue
     case yellow
     
     var accentColor: Color {
         switch self {
         case .lavender, .yellow: return .black
-        case .purple: return .white
+        case .blue: return .white
         }
     }
     var mainColor: Color {

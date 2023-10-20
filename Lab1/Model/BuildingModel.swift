@@ -1,7 +1,8 @@
 import Foundation
 import MapKit
 
-struct BuildingModel {
+struct BuildingModel: Identifiable {
+    var id: UUID
     var symbol: String
     var name: String
     var image: String
@@ -12,6 +13,21 @@ struct BuildingModel {
     var shape: MKPolygon
     var type: String
     var theme: Theme
+    
+    init(id: UUID = UUID(), symbol: String, name: String, image: String, address: String, description: String, wifi: Bool, wheelChair: AvailableOptionEnum,
+         shape: MKPolygon, type: String, theme: Theme) {
+        self.id = id
+        self.symbol = symbol
+        self.name = name
+        self.image = image
+        self.address = address
+        self.description = description
+        self.wifi = wifi
+        self.wheelChair = wheelChair
+        self.shape = shape
+        self.type = type
+        self.theme = theme
+    }
 }
 
 enum AvailableOptionEnum {
@@ -67,6 +83,6 @@ extension BuildingModel {
                         CLLocationCoordinate2DMake(50.0645993, 19.9199271)
                       ], count: 4),
                       type: "university",
-                      theme: .purple),
+                      theme: .blue),
     ]
 }

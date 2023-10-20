@@ -18,6 +18,7 @@
 		AC712A8F2ACFF6250087723F /* Lab1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC712A8E2ACFF6250087723F /* Lab1Tests.swift */; };
 		AC712A992ACFF6260087723F /* Lab1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC712A982ACFF6260087723F /* Lab1UITests.swift */; };
 		AC712A9B2ACFF6260087723F /* Lab1UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC712A9A2ACFF6260087723F /* Lab1UITestsLaunchTests.swift */; };
+		ACD3862B2AE26D4600A2403F /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD3862A2AE26D4600A2403F /* ListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		AC712A942ACFF6250087723F /* Lab1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Lab1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC712A982ACFF6260087723F /* Lab1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lab1UITests.swift; sourceTree = "<group>"; };
 		AC712A9A2ACFF6260087723F /* Lab1UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lab1UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		ACD3862A2AE26D4600A2403F /* ListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 			children = (
 				AC56F4472AD9303F005F2B04 /* Model */,
 				AC712A7D2ACFF6240087723F /* Lab1App.swift */,
+				ACD3862A2AE26D4600A2403F /* ListView.swift */,
 				AC712A7F2ACFF6240087723F /* BuidlingView.swift */,
 				AC56F44C2AD9311D005F2B04 /* CardView.swift */,
 				AC712A812ACFF6250087723F /* Assets.xcassets */,
@@ -280,6 +283,7 @@
 				AC56F4492AD93050005F2B04 /* Theme.swift in Sources */,
 				AC56F44F2AD93282005F2B04 /* TrailingIconLabelStyle.swift in Sources */,
 				AC56F44D2AD9311D005F2B04 /* CardView.swift in Sources */,
+				ACD3862B2AE26D4600A2403F /* ListView.swift in Sources */,
 				AC712A802ACFF6240087723F /* BuidlingView.swift in Sources */,
 				AC712A7E2ACFF6240087723F /* Lab1App.swift in Sources */,
 				AC56F44B2AD930A3005F2B04 /* BuildingModel.swift in Sources */,

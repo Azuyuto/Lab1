@@ -15,7 +15,7 @@ struct CardView: View {
                 {
                     Image(systemName: "wifi")
                         .imageScale(.large)
-                        .foregroundStyle(.black)
+                        .tint(building.theme.accentColor)
                 }
                 if(building.wheelChair != AvailableOptionEnum.No)
                 {

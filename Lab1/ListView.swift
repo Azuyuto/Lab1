@@ -1,20 +1,30 @@
 import SwiftUI
 
-
-struct ScrumsView: View {
+struct ListView: View {
     let buildings: [BuildingModel]
     
     var body: some View {
-        List(buildings, id: \.name) { building in
-            CardView(building: building)
+        NavigationStack {
+            List(buildings, id: \.name) { building in
+                NavigationLink(destination: BuildingView(building: building)) {
+                    CardView(building: building)
+                }
                 .listRowBackground(building.theme.mainColor)
+            }
+            .navigationTitle("Budynki AGH")
+            .toolbar {
+                Button(action: {}) {
+                    Image(systemName: "plus")
+                }
+                .accessibilityLabel("New Scrum")
+            }
         }
     }
 }
 
 
-struct ScrumsView_Previews: PreviewProvider {
+struct ListView_Previews: PreviewProvider {
     static var previews: some View {
-        ScrumsView(buildings: BuildingModel.sampleData)
+        ListView(buildings: BuildingModel.sampleData)
     }
 }

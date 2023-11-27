@@ -17,12 +17,12 @@ struct CardView: View {
                         .imageScale(.large)
                         .tint(building.theme.accentColor)
                 }
-                if(building.wheelChair != AvailableOptionEnum.No)
+                if(building.wheelchair != AvailableOptionEnum.no)
                 {
                     Image(systemName: "figure.roll")
                         .imageScale(.large)
                         .foregroundStyle(.tint)
-                        .tint(building.wheelChair == AvailableOptionEnum.Yes ? .black : .gray)
+                        .tint(building.wheelchair == AvailableOptionEnum.yes ? .black : .gray)
                 }
             }
             .font(.caption)

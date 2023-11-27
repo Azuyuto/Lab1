@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6F0765902B14ABE90055A5B3 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F07658F2B14ABE90055A5B3 /* MapView.swift */; };
+		6F0765932B14BC4F0055A5B3 /* Simulator Screenshot - iPhone 15 Pro - 2023-11-27 at 12.58.06.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F0765922B14BC4F0055A5B3 /* Simulator Screenshot - iPhone 15 Pro - 2023-11-27 at 12.58.06.png */; };
+		6F0765952B14BC7F0055A5B3 /* Simulator Screenshot - iPhone 15 Pro - 2023-11-27 at 13.00.50.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F0765942B14BC7F0055A5B3 /* Simulator Screenshot - iPhone 15 Pro - 2023-11-27 at 13.00.50.png */; };
+		6F6E37D12B1464B60006A528 /* PolygonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F6E37D02B1464B60006A528 /* PolygonModel.swift */; };
+		6F6E37D32B146D9A0006A528 /* BuildingStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F6E37D22B146D9A0006A528 /* BuildingStore.swift */; };
 		AC56F4492AD93050005F2B04 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC56F4482AD93050005F2B04 /* Theme.swift */; };
 		AC56F44B2AD930A3005F2B04 /* BuildingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC56F44A2AD930A3005F2B04 /* BuildingModel.swift */; };
 		AC56F44D2AD9311D005F2B04 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC56F44C2AD9311D005F2B04 /* CardView.swift */; };
@@ -39,6 +44,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6F07658F2B14ABE90055A5B3 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		6F0765922B14BC4F0055A5B3 /* Simulator Screenshot - iPhone 15 Pro - 2023-11-27 at 12.58.06.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Simulator Screenshot - iPhone 15 Pro - 2023-11-27 at 12.58.06.png"; path = "../../../Simulator Screenshot - iPhone 15 Pro - 2023-11-27 at 12.58.06.png"; sourceTree = "<group>"; };
+		6F0765942B14BC7F0055A5B3 /* Simulator Screenshot - iPhone 15 Pro - 2023-11-27 at 13.00.50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Simulator Screenshot - iPhone 15 Pro - 2023-11-27 at 13.00.50.png"; path = "../../../Simulator Screenshot - iPhone 15 Pro - 2023-11-27 at 13.00.50.png"; sourceTree = "<group>"; };
+		6F6E37D02B1464B60006A528 /* PolygonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolygonModel.swift; sourceTree = "<group>"; };
+		6F6E37D22B146D9A0006A528 /* BuildingStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildingStore.swift; sourceTree = "<group>"; };
 		AC56F4482AD93050005F2B04 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		AC56F44A2AD930A3005F2B04 /* BuildingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildingModel.swift; sourceTree = "<group>"; };
 		AC56F44C2AD9311D005F2B04 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
@@ -81,12 +91,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6F0765912B14BB2F0055A5B3 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				6F0765942B14BC7F0055A5B3 /* Simulator Screenshot - iPhone 15 Pro - 2023-11-27 at 13.00.50.png */,
+				6F0765922B14BC4F0055A5B3 /* Simulator Screenshot - iPhone 15 Pro - 2023-11-27 at 12.58.06.png */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		6F6E37D42B146DA30006A528 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				6F6E37D22B146D9A0006A528 /* BuildingStore.swift */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
 		AC56F4472AD9303F005F2B04 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				AC56F4482AD93050005F2B04 /* Theme.swift */,
 				AC56F44A2AD930A3005F2B04 /* BuildingModel.swift */,
 				AC56F44E2AD93282005F2B04 /* TrailingIconLabelStyle.swift */,
+				6F6E37D02B1464B60006A528 /* PolygonModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -114,6 +142,8 @@
 		AC712A7C2ACFF6240087723F /* Lab1 */ = {
 			isa = PBXGroup;
 			children = (
+				6F0765912B14BB2F0055A5B3 /* Screens */,
+				6F6E37D42B146DA30006A528 /* Store */,
 				AC56F4472AD9303F005F2B04 /* Model */,
 				AC712A7D2ACFF6240087723F /* Lab1App.swift */,
 				ACD3862A2AE26D4600A2403F /* ListView.swift */,
@@ -121,6 +151,7 @@
 				AC56F44C2AD9311D005F2B04 /* CardView.swift */,
 				AC712A812ACFF6250087723F /* Assets.xcassets */,
 				AC712A832ACFF6250087723F /* Preview Content */,
+				6F07658F2B14ABE90055A5B3 /* MapView.swift */,
 			);
 			path = Lab1;
 			sourceTree = "<group>";
@@ -254,7 +285,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F0765952B14BC7F0055A5B3 /* Simulator Screenshot - iPhone 15 Pro - 2023-11-27 at 13.00.50.png in Resources */,
 				AC712A852ACFF6250087723F /* Preview Assets.xcassets in Resources */,
+				6F0765932B14BC4F0055A5B3 /* Simulator Screenshot - iPhone 15 Pro - 2023-11-27 at 12.58.06.png in Resources */,
 				AC712A822ACFF6250087723F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -281,11 +314,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC56F4492AD93050005F2B04 /* Theme.swift in Sources */,
+				6F6E37D32B146D9A0006A528 /* BuildingStore.swift in Sources */,
 				AC56F44F2AD93282005F2B04 /* TrailingIconLabelStyle.swift in Sources */,
 				AC56F44D2AD9311D005F2B04 /* CardView.swift in Sources */,
 				ACD3862B2AE26D4600A2403F /* ListView.swift in Sources */,
 				AC712A802ACFF6240087723F /* BuidlingView.swift in Sources */,
 				AC712A7E2ACFF6240087723F /* Lab1App.swift in Sources */,
+				6F0765902B14ABE90055A5B3 /* MapView.swift in Sources */,
+				6F6E37D12B1464B60006A528 /* PolygonModel.swift in Sources */,
 				AC56F44B2AD930A3005F2B04 /* BuildingModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

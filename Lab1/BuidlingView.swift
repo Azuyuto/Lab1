@@ -19,18 +19,34 @@ struct MyMap: View {
 struct BuildingView: View {
     let building: BuildingModel
     var body: some View {
+        let imageURL = URL(string: building.imageURL)!
         ScrollView{
             VStack(alignment: .leading) {
-                Image(.building)
-                    .resizable()
-                    .aspectRatio(2/1, contentMode: .fit)
-                    .cornerRadius(10)
+                AsyncImage(url: imageURL){
+                    phase in
+                       switch phase {
+                       case .empty:
+                           ProgressView()
+                       case .success(let image):
+                           image
+                               .resizable()
+                               .aspectRatio(2/1, contentMode: .fit)
+                               .cornerRadius(10)
+                       case .failure:
+                           Image(systemName: "exclamationmark.triangle")
+                               .resizable()
+                               .scaledToFit()
+                               .foregroundColor(.red)
+                       @unknown default:
+                           fatalError()
+                       }
+                }
                 Text(building.symbol)
                     .font(.system(size: 30, weight: .bold))
                 Text("(" + building.name + ")")
                     .font(.system(size: 20))
                 HStack {
-                    Text(building.address)
+                    Text(building.street + " " + building.houseNumber)
                         .font(.system(size: 14))
                     Spacer()
                     if(building.wifi)
@@ -39,18 +55,24 @@ struct BuildingView: View {
                             .imageScale(.large)
                             .foregroundStyle(.black)
                     }
-                    if(building.wheelChair != AvailableOptionEnum.No)
+                    if(building.wheelchair != AvailableOptionEnum.no)
                     {
                         Image(systemName: "figure.roll")
                             .imageScale(.large)
                             .foregroundStyle(.tint)
-                            .tint(building.wheelChair == AvailableOptionEnum.Yes ? .black : .gray)
+                            .tint(building.wheelchair == AvailableOptionEnum.yes ? .black : .gray)
                     }
                 }
                 Text(building.description)
                     .font(.system(size: 12))
                     .padding(.top, 10)
-                MyMap()
+                let buildingShape = convertPolygonToBuildingShape(polygons: building.polygon)
+                let mapSize = UIScreen.main.bounds.width - 20
+                Map{
+                    MapPolygon(coordinates: buildingShape)
+                        .stroke(.blue, lineWidth: 2)
+                }
+                .frame(width: mapSize, height: mapSize)
             }
             .padding(10)
         }
